@@ -50,7 +50,7 @@ public class VenueControllerTest {
         Venue venue = new Venue();
         venue.setName("foo");
 
-        String expected = "";
+        String expected = "[{\"name\":\"foo\"}]";
 
         given(mockVenueService.getNearbyVenues(Matchers.any())).willReturn(Collections.singletonList(venue));
 
